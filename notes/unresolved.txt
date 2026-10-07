@@ -9,5 +9,4 @@ Tournamaxx::Instance() | racing.so
 HighScoresManager::StartGame(xml_gameinfo::GameIds) | racing.so
 SoundOGG::IsOGGPlaying(SoundOGG*) | racing.so
 SoundOGG::RampOGGVolume(SoundOGG*, int, int, bool) | racing.so
-SoundOGG::PlayOGG(char*, unsigned short, int) | racing.so
 MeritSound::SoundManager::GetSoundVolume(int) const | racing.so
