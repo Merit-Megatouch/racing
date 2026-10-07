@@ -2,36 +2,12 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-FileExists(char const*) | libmerit3d.so
-FileExists(char const*) | racing.so
-Debug_Flag_Set(char const*, char const*) | racing.so
 MeritSound::SoundManager::SetSoundFrequency(int, int) | racing.so
 MeritSound::SoundManager::SweepSoundFrequency(int, int, int) | racing.so
 Tournamaxx::GetLocalMaxScore(int) | racing.so
 Tournamaxx::Instance() | racing.so
-ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
-ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
 HighScoresManager::StartGame(xml_gameinfo::GameIds) | racing.so
-Merit3d::RenderToTexture::UpdateTexture(unsigned char*) | libmerit3d.so
-Merit3d::RenderToTexture::UpdateDeltaTextureFull(unsigned short*, unsigned char*, unsigned short) | libmerit3d.so
-Merit3d::RenderToTexture::UpdateDeltaTextureDirty(unsigned short*, unsigned short) | libmerit3d.so
-Merit3d::RenderToTexture::Create(unsigned int, unsigned int, unsigned int) | libmerit3d.so
-Merit3d::RenderToTexture::Destroy() | libmerit3d.so
-Merit3d::RenderToTexture::RenderToTexture() | libmerit3d.so
-Merit3d::RenderToTexture::~RenderToTexture() | libmerit3d.so
-Merit3d::VideoObjectData::FirstFrame() | libmerit3d.so
-Merit3d::VideoObjectData::isVideoLoaded() | libmerit3d.so
-Merit3d::VideoObjectData::Load(char const*, bool) | libmerit3d.so
-Merit3d::VideoObjectData::Play() | libmerit3d.so
-Merit3d::VideoObjectData::Stop() | libmerit3d.so
-Merit3d::VideoObjectData::Pause() | libmerit3d.so
-Merit3d::VideoObjectData::Update(float) | libmerit3d.so
-Merit3d::VideoObjectData::Restart(int) | libmerit3d.so
-Merit3d::VideoObjectData::Shutdown() | libmerit3d.so
-Merit3d::VideoObjectData::VideoObjectData() | libmerit3d.so
 SoundOGG::IsOGGPlaying(SoundOGG*) | racing.so
 SoundOGG::RampOGGVolume(SoundOGG*, int, int, bool) | racing.so
 SoundOGG::PlayOGG(char*, unsigned short, int) | racing.so
-TextUtils::ConvertToMarkup(char const*) | libmerit3d.so
 MeritSound::SoundManager::GetSoundVolume(int) const | racing.so
-typeinfo for ExtendedCrashInfo | libmeritbasegame.so
